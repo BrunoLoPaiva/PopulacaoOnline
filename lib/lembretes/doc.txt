@@ -1,0 +1,16 @@
+snapshot.data[index]
+                .data()['actions']
+                .forEach((k, v) => acoes.add(Column(
+                      children: [
+                        SizedBox(height: screen.height * 0.01),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(k),
+                        ),
+                        Text(
+                          v,
+                          textAlign: TextAlign.justify,
+                          style: TextStyle(fontSize: 12),
+                        )
+                      ],
+                    )));

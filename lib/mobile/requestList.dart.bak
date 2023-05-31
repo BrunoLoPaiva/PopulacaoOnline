@@ -1,0 +1,57 @@
+import 'package:app/data/requests.dart';
+import 'package:flutter/material.dart';
+import 'request_info.dart';
+import 'package:app/models/request.dart';
+
+class RequestList extends StatelessWidget {
+  const RequestList({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var req = {...allRequests};
+
+    getData();
+
+    String appBar_title = 'Lista de solicitações';
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(appBar_title),
+      ),
+      body: ListView.separated(
+        padding: const EdgeInsets.all(8),
+        itemCount: req.length,
+        itemBuilder: (BuildContext context, int index) {
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (BuildContext context) {
+                    return RequestInfo(id: req.values.elementAt(index).id - 1);
+                  },
+                ),
+              );
+            },
+            child: Card(
+              color: Color(int.parse(req.values.elementAt(index).color)),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Icon(req.values.elementAt(index).icon),
+                    SizedBox(width: 10),
+                    Text('Solicitação #1564${req.values.elementAt(index).id}'),
+                    Spacer(),
+                    Icon(Icons.keyboard_arrow_right),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
+        separatorBuilder: (BuildContext context, int index) => const Divider(),
+      ),
+    );
+  }
+}
