@@ -16,6 +16,9 @@ O População Online oferece as seguintes funcionalidades:
 
 - Acompanhamento de chamados: Os usuários podem acompanhar o status de seus chamados, desde a abertura até o encerramento.
 
+![Telas APP Mobile (1)](https://raw.githubusercontent.com/BrunoLoPaiva/PopulacaoOnline/main/screenshots/Slide1.JPG)
+![Telas APP Mobile (1)](https://raw.githubusercontent.com/BrunoLoPaiva/PopulacaoOnline/main/screenshots/Slide2.JPG)
+
 ### Para a prefeitura:
 
 - Gerenciamento de chamados: A prefeitura tem acesso a uma interface web para gerenciar os chamados recebidos. Eles podem visualizar, priorizar, designar e atualizar o status dos chamados.
@@ -23,6 +26,8 @@ O População Online oferece as seguintes funcionalidades:
 - Medição de efetividade: A interface web exibe diversos dashboards, que auxiliam a prefeitura a avaliar seu desempenho.
 
 - Comunicação com os usuários: A prefeitura pode fornecer atualizações, solicitar informações adicionais ou fornecer respostas aos usuários.
+
+![Telas APP Web (1)](https://raw.githubusercontent.com/BrunoLoPaiva/PopulacaoOnline/main/screenshots/Slide3.JPG)
 
 ## Como Baixar e Rodar o Projeto
 
